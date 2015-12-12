@@ -1,0 +1,14 @@
+# VTK 6.3.0
+# ==============================================================================
+
+This is a machinery for building of VTK 6.3.0 within our projects. To use VTK 
+libraries, include in your CMake project:
+
+SET(VTK_DIR "${DEVELOPMENT_ROOT}/thirdparty/vtk/6.3.0/build/lib/cmake/vtk-6.3")
+MESSAGE(${VTK_DIR})
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+List of libraries is accessible via ${VTK_LIBRARIES}.
+
+
