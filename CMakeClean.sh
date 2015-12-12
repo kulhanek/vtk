@@ -13,6 +13,7 @@ case $MODE in
         rm -rf `find . -name Makefile`
         rm -rf `find . -name '*~'`
         rm -rf `find . -name '*.o'`
+        rm -rf `find . -name 'VTK-6.3.0*'`
     ;;
     "deep")
         rm -rf `find . -name CMakeFiles`
@@ -25,7 +26,8 @@ case $MODE in
         rm -rf `find . -name '*.so'`
         rm -rf `find . -name '*.so.*'`
         rm -rf `find . -name '*.mod'`
-        rm -rf bin/*
+        rm -rf `find . -name 'VTK-6.3.0*'`
+        rm -rf build
     ;;
 esac
 
